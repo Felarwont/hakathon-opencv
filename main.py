@@ -52,16 +52,16 @@ def main(simulation=True):
                     continue
                 last_tx[key] = now
 
-                send_event({
-                    "label": d["label"],
-                    "lat": t_lat,
-                    "lon": t_lon,
-                    "alt": alt,
-                    "drone_lat": lat,
-                    "drone_lon": lon,
-                    "bbox": d["bbox"],
-                    "battery": battery,
-                })
+                # send_event({
+                #     "label": d["label"],
+                #     "lat": t_lat,
+                #     "lon": t_lon,
+                #     "alt": alt,
+                #     "drone_lat": lat,
+                #     "drone_lon": lon,
+                #     "bbox": d["bbox"],
+                #     "battery": battery,
+                # })
 
             cv2.imshow("OKO MCHS", frame)
             if cv2.waitKey(1) & 0xFF == 27:  # ESC
