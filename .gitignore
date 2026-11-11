@@ -181,6 +181,7 @@ dmypy.json
 .pytype/
 
 buffer/
+*.pt
 
 # Cython debug symbols
 cython_debug/
